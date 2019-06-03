@@ -1,0 +1,20 @@
+body{
+	margin: 10px;
+	padding: 10px;
+
+	color: #000;
+	background: #fff;
+
+	font-family: "arial black","YuGothic","Yu Gothic","Meiryo","ƒqƒ‰ƒMƒmŠpƒS","sans-serif";
+}
+
+
+h1#sys-name{
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+span#page-name{
+	font-size:20px;
+}

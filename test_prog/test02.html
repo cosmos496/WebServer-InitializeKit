@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+<head>
+<title>JAVASCRIPT</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+<script type="text/javascript">
+	for(var i in navigator.plugins){
+		document.write(i + ": " + navigator.plugins[i] + "<br>");
+	}
+
+	document.write("<br>");
+
+	with(document){
+		write("<p>ブラウザのコード名: <em>" + navigator.appCodeName + "</em></p>");
+		write("<p>ブラウザのマイナーバージョン番号: <em>" + navigator.appMinorVersion + "</em></p>");
+		write("<p>ブラウザ名: <em>" + navigator.appName + "</em></p>");
+		write("<p>ブラウザのバージョン番号: <em>" + parseInt(navigator.appVersion) + "</em></p>");
+		write("<p>現在のブラウザの使用言語: <em>" + navigator.browserLanguage + "</em></p>");
+		write("<p>Cookiesは有効か: <em>" + navigator.cookieEnabled + "</em></p>");
+		write("<p>ブラウザシステムのCPUクラス: <em>" + navigator.cpuClass + "</em></p>");
+		write("<p>オンライン状態かどうか: <em>" + navigator.onLine + "</em></p>");
+	}
+
+	document.write("<br>");
+
+	with(document){
+        write("<p>ユーザーのOS: <em>"+navigator.platform+"<\/em><\/p>");
+        write("<p>ユーザーのOSのデフォルト言語: <em>"+navigator.systemLanguage+"<\/em><\/p>");
+        write("<p>ユーザー使用言語: <em>"+navigator.language+"<\/em><\/p>");
+        write("<p>ユーザーエージェントのヘッダ文字列: <em>"+navigator.userAgent+"<\/em><\/p>");
+        write("<p>ユーザーのOSで設定されている言語: <em>"+navigator.userLanguage+"<\/em><\/p>");
+    }
+</script>
+</body>
+
+</html>
